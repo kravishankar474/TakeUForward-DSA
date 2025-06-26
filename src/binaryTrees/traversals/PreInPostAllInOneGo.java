@@ -7,6 +7,15 @@ import java.util.Stack;
 
 import binaryTrees.TreeNode;
 
+/*
+ * 
+ * Approach
+1. Create three vectors to store the results of Preorder, Inorder, and Postorder traversals. Use a stack to keep track of nodes and their traversal states. Start with the root node and a state of 1 (indicating Preorder).While the stack is not empty, pop the top element from the stack.
+2. If the state is 1 (Preorder), add the node's data to the Preorder vector, change the state to 2 (Inorder) and push the node back onto the stack. If the node has a left child, push it onto the stack with a state of 1.
+3. If the state is 2 (Inorder), add the node's data to the Inorder vector. change the state to 3 (Postorder) and push the node back onto the stack. If the node has a right child, push it onto the stack with a state of 1.
+4. If the state is 3 (Postorder), Add the node's data to the Postorder vector. Return the vectors containing the Preorder, Inorder, and Postorder traversals.
+ */
+
 //Helper class to store a TreeNode and its traversal state
 class NodeState {
 	TreeNode node;
