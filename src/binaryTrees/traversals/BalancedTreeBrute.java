@@ -15,7 +15,7 @@ import binaryTrees.TreeNode;
 Space Complexity: O(N), because of the recursive stack space.
  */
 
-public class BalancedTree {
+public class BalancedTreeBrute {
 
 	public boolean isBalanced(TreeNode root) {
 		// If the tree is empty, it's balanced
@@ -68,7 +68,7 @@ public class BalancedTree {
 		root.left.right.right.right = new TreeNode(7);
 
 		// Creating an instance of the BalancedTree class
-		BalancedTree BalancedTree = new BalancedTree();
+		BalancedTreeBrute BalancedTree = new BalancedTreeBrute();
 
 		// Checking if the tree is balanced
 		if (BalancedTree.isBalanced(root)) {
