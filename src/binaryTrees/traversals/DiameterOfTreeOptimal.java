@@ -49,7 +49,7 @@ public class DiameterOfTreeOptimal {
 		// Update the diameter with the maximum of current diameter
 		diameter[0] = Math.max(diameter[0], lh[0] + rh[0]);
 
-		// Return the height of the current node's subtree
+		// Return the height of the current node's subtree 	
 		return 1 + Math.max(lh[0], rh[0]);
 	}
 
