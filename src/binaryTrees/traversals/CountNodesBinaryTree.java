@@ -14,6 +14,15 @@ Calculate Tree Heights: To determine the height of a subtree, initialize a heigh
 	Traverse down the left or right side of the tree using a while loop, incrementing the height variable until reaching a leaf node. 
 		Return the final computed height.
  */
+
+/*
+ * Complexity Analysis
+Time Complexity: O(log N * log N) where N is the number of nodes in the binary tree. Calculating leftHeight and rightHeight each takes O(log N) time. 
+	In the worst-case scenario, the recursive calls occur at most log N times, leading to a total time complexity of O(log N * log N).
+
+Space Complexity:O(log N) where N is the number of nodes in the binary tree. T
+	he maximum depth of the recursion stack is equal to the tree's height, which is log N for a complete binary tree.
+ */
 public class CountNodesBinaryTree {
 
 	public int countNodes(TreeNode root) {
